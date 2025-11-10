@@ -47,13 +47,6 @@ jobs:
         cd backend/
         python manage.py test
 
-      env:
-        DB_HOST: localhost
-        DB_PORT: 5432
-        DB_NAME: ${{ secrets.POSTGRES_DB }}
-        DB_USER: ${{ secrets.POSTGRES_USER }}
-        DB_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
-
   build_and_push_to_docker_hub:
     name: Push Docker image to DockerHub
     runs-on: ubuntu-latest
