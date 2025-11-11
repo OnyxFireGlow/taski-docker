@@ -10,7 +10,13 @@ SECRET_KEY = (
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '172.19.0.1', '127.0.0.1', 'backend']
+ALLOWED_HOSTS = [
+    'localhost',
+    '172.19.0.1',
+    '127.0.0.1',
+    'backend',
+    'tasky.sytes.net',
+]
 
 
 # Application definition
